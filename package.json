@@ -1,0 +1,26 @@
+{
+  "name": "@accelon/ptkmcp",
+  "version": "1.0.7",
+  "main": "index.js",
+  "type":"module",
+  "bin": {
+    "ptkmcp-server": "index.js"
+   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/accelon/ptkmcp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/accelon/ptkmcp/issues"
+  },
+  "homepage": "https://github.com/accelon/ptkmcp#readme",
+  "description": "",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.1"
+  }
+}
