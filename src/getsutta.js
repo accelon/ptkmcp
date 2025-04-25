@@ -1,5 +1,5 @@
 import {allowedDirectories} from './datadir.js'
-import { nodefs } from 'ptk/nodebundle.cjs';
+import { nodefs } from 'ptk/platform/nodefs.ts';
 import {getSuttaTextByAddress,loadPtks} from './loadptk.js';
 await nodefs;
 loadPtks(allowedDirectories[0]);

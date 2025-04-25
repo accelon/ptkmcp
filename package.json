@@ -1,13 +1,14 @@
 {
   "name": "@accelon/ptkmcp",
-  "version": "1.0.7",
+  "version": "1.0.10",
   "main": "index.js",
   "type":"module",
   "bin": {
-    "ptkmcp-server": "index.js"
+    "ptkmcp-server": "dist/server.js"
    },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"bun build index.js --target=bun --outfile=dist/server.js"
   },
   "repository": {
     "type": "git",
