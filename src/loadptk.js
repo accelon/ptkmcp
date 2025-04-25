@@ -1,7 +1,7 @@
 import { nodefs} from 'ptk/platform/nodefs.ts';
 import {usePtk,openPtk,enableAccelon23Features} from 'ptk/basket/index.ts';
 import { toIASTOffText } from 'provident-pali/src/iast.js';
-export const ptks=['cs','sc','cs-ccc','cs-xsq']//,'cs-kmj','cs-mm','cs-yh','cs-xsq'];
+export const ptks=['cs','sc','cs-ccc','cs-kmj','cs-mm','cs-yh','cs-xsq'];
 
 await nodefs;
 export const loadPtks=async (dir)=>{
