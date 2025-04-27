@@ -3,8 +3,9 @@ import os from 'os';
 
 const args = process.argv.slice(2);
 if (args.length === 0) {
-    console.error("Usage: ptkmcp <allowed-directory> [additional-directories...]");
-    process.exit(1);
+    // console.error("Usage: ptkmcp <allowed-directory> [additional-directories...]");
+    // process.exit(1);
+    args.push('d:/2023/sz/dist')
 }
 // Normalize all paths consistently
 function normalizePath(p) {

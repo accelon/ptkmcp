@@ -38,7 +38,6 @@ export const getSuttaTextByAddress=(addr)=>{
         if (r[1]) suttatext=ptk.slice(r[0],r[1]).filter(it=>!!it).join('\n');
         if (ptk.name=='cs') {
             suttatext=toIASTOffText(suttatext);
-            console.log(suttatext)
         }
     }
     return suttatext;

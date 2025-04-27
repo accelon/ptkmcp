@@ -1,14 +1,14 @@
 {
   "name": "@accelon/ptkmcp",
   "version": "1.0.11",
-  "main": "index.js",
-  "type":"module",
+  "main": "src/index.ts",
+  "type": "module",
   "bin": {
     "ptkmcp-server": "dist/server.js"
-   },
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"bun build index.js --target=bun --outfile=dist/server.js"
+    "server": "bunx dist/server.js",
+    "build": "bun build src/index.ts --target=bun --outfile=dist/server.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,11 @@
   "homepage": "https://github.com/accelon/ptkmcp#readme",
   "description": "",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.10.1"
+    "@modelcontextprotocol/sdk": "^1.10.1",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "ts-node": "^10.9.2",
+    "zod": "^3.24.3"
   }
 }
